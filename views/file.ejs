@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>CSV Reader</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/css/file.css">
+</head>
+<body>
+    <!-- heading -->
+    <div id="header">
+        <img src="/img/csvicon.png" style="width: 70px; height: 50px;"><a href="/">CSV READER</a>
+    </div>
+   <!--Search Bar-->
+   <div id="search-box">
+        <input type="text" id="search" placeholder="Search for specific rows...">
+        <img src="/img/seach.png" style="width: 40px;height:40px;position: relative;top:15px">
+    </div>
+<!-- End of search bar
+table -->
+    <table  id="myTable" style="width:100%">
+        <tr>
+            <%for(let header of headers){%>
+                <th>
+                    <%=header%>
+                </th>
+            <%}%>
+        </tr>
+        <%for(let i=0;i<datas.length;i++){%>
+            <tr>
+                <%for(let j=0;j<headers.length;j++){%>
+                    <td>
+                        <%=datas[i][headers[j]]%>
+                    </td>
+                <%}%>
+            </tr>
+        <%}%>
+    </table>
+<!-- pagination -->
+    <div id="page-numbers"></div>
+
+<script  type="text/javascript" src="/js/file.js"></script>
+</body>
+</html>

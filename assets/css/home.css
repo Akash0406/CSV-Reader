@@ -1,0 +1,95 @@
+/* Body tag */
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(192, 226, 248);
+    overflow-x: hidden;
+}
+
+/* Website header */
+#header {
+    height: 2.5rem;
+    padding: 1rem;
+    width: 97.5vw;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Input form */
+#input-form{
+    width: 100vw;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: .5px solid lightgray;
+    background-color: white;
+}
+
+#input-form-header {
+    font-weight: bold;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+    font-family: cursive;
+    font-size: xx-large;
+}
+
+form {
+    margin-bottom: 3rem;
+}
+
+button[type="submit"] {
+    background-color: white;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(0, 111, 180);
+    transition: background-color .3s ease-in-out;
+}
+/* End of input form */
+
+/* Files div */
+#files {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    
+}
+
+#files-header {
+    font-weight: bold;
+    font-family: cursive;
+    font-size: larger;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+.individual-file {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50vw;
+    margin-left: 23vw;
+    padding: 1rem;
+    margin-bottom: .5rem;
+    border-radius: .5rem;
+    background-color: whitesmoke;
+}
+
+.individual-file a {
+    text-decoration: none;
+    color: black;
+}
+/* End of files div */
+
+
+
+

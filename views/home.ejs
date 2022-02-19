@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>CSV Home</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/css/home.css">
+        <link rel="stylesheet" href="text/css" href="/css/button.css">
+    </head>
+    <body>
+        <!-- heading -->
+        <div id="header"><img src="/img/csvicon.png" style="width: 70px; height: 50px;">CSV READER</div>
+        <div id="input-form">
+            <!--Form header-->
+            <div id="input-form-header">Upload a new CSV File</div>
+            <!--Input multipart form-->
+            <form class="form" action="/files/upload" id="myForm" method="POST" enctype="multipart/form-data">
+                <input type="file" id="file" name="file" required>
+                <button type="submit" id="submit-form"><img src="/img/button.png" style="width: 70px; height: 50px;position: relative;top:15px"></button>
+                <button class="button">
+                    <span class="submit">Submit</span>
+                    <span class="loading"><i class="fa fa-refresh"></i></span>
+                    <span class="check"><i class="fa fa-check"></i></span>
+                </button>
+            </form>
+            <!--End of form-->
+        </div>
+        <!--End of input form div-->
+        <div id="files">
+            <div id="files-header">Uploaded Files</div>
+            <!-- list of uploaded files -->
+            <ul>
+                <%for(let file of files){%>
+                    <div class="individual-file">
+                    <li><img src="/img/csv.jpg" style="width:25px;height:25px"><a href="/files/<%=file._id%>">
+                        <%=file.original_name%>
+                        &nbsp;<i class="fa fa-external-link-square" aria-hidden="true"></i>
+                    </a></li>
+                    <a href="/files/<%=file._id%>/delete"><i class="fa fa-trash-o" style="font-size: x-large;"></i></a>
+                    </div>
+                <%}%>
+            </ul>
+        </div>
+        <script type="text/javascript" src="/js/home.js"></script>
+        <script type="text/javascript" src="/js/button.js"></script>
+    </body>
+</html>
