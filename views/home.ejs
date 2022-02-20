@@ -8,14 +8,14 @@
     </head>
     <body>
         <!-- heading -->
-        <div id="header"><img src="/img/csvicon.png" style="width: 70px; height: 50px;">CSV READER</div>
+        <div id="header"><img src="/img/csvicon.png" style="width: 70px; height: 50px;"><h3>CSV READER</h3></div>
         <div id="input-form">
             <!--Form header-->
             <div id="input-form-header">Upload a new CSV File</div>
             <!--Input multipart form-->
             <form class="form" action="/files/upload" id="myForm" method="POST" enctype="multipart/form-data">
-                <input type="file" id="file" name="file" required>
-                <button type="submit" id="submit-form"><img src="/img/button.png" style="width: 70px; height: 50px;position: relative;top:15px"></button>
+                <input type="file" class="custom-file-input" id="file" name="file" required>
+                
                 <button class="button">
                     <span class="submit">Submit</span>
                     <span class="loading"><i class="fa fa-refresh"></i></span>

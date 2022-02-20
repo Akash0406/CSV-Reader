@@ -1,18 +1,31 @@
 body {
     margin: 0px;
     padding: 0px;
+    background-color: rgba(21, 22, 22, 0.603);
+    overflow-x: hidden;
 }
 
 /* Header */
 #header {
-    height: 2.5rem;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: row; */
+
+    height: 3rem;
     padding: 1rem;
-    width: 97vw;
-    background-color: rgb(31, 31, 31);
+    width: 100vw;
+    background-color: rgba(29, 24, 24, 0.514);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
     font-weight: bold;
+}
+
+#header h3 {
+    position: absolute;
+    color: blue;
+    padding: 0 100px;
+    top: -20px;
 }
 
 #header a {
@@ -23,11 +36,17 @@ body {
 
 /* Table */
 table {
-    width: 98vw;
+    /* border: 2px solid red; */
     border-collapse: collapse;
     font-family: Arial, Helvetica, sans-serif;
-    margin-right: 0;
-    padding-right: 0;
+    /* margin-right: 0;
+    padding-right: 0; */
+    
+}
+
+#table-main{
+    padding: 10px;
+    
 }
 
 th {
@@ -36,10 +55,14 @@ th {
     padding: .5em;
     height: 1.5rem;
     font-weight: bold;
+    border-radius: 20px;
 }
 
 td {
-    padding: .5rem;
+    padding: .8rem;
+    border-radius: 20px;
+    background-color: rgba(24, 23, 23, 0.596);
+    color: white;
 }
 th {
     cursor: pointer;
@@ -49,7 +72,8 @@ th:hover {
     transition: background-color .3s ease-in-out;
 }
 th, td {
-    border: .5px solid black;
+    /* border: .5px solid black; */
+    border-radius: 20px;
 }
 /*End of table */
 
@@ -60,13 +84,15 @@ th, td {
     text-align: center;
     padding-left: 0;
     padding-right: 0;
+    
 }
 
 #search-box input {
     padding: .5rem;
     height: 1.5rem;
     width: 40vw;
-    border: 2px solid blue;
+    border: 2px solid rgb(0, 255, 13);
+    border-radius: 20px;
 }
 
 #search-box input:focus {

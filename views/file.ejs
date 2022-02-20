@@ -8,16 +8,14 @@
 </head>
 <body>
     <!-- heading -->
-    <div id="header">
-        <img src="/img/csvicon.png" style="width: 70px; height: 50px;"><a href="/">CSV READER</a>
-    </div>
+    <div id="header"><img src="/img/csvicon.png" style="width: 70px; height: 50px;"><h3>CSV READER</h3></div>
    <!--Search Bar-->
    <div id="search-box">
         <input type="text" id="search" placeholder="Search for specific rows...">
-        <img src="/img/seach.png" style="width: 40px;height:40px;position: relative;top:15px">
     </div>
 <!-- End of search bar
 table -->
+<div id="table-main">
     <table  id="myTable" style="width:100%">
         <tr>
             <%for(let header of headers){%>
@@ -36,6 +34,7 @@ table -->
             </tr>
         <%}%>
     </table>
+</div>
 <!-- pagination -->
     <div id="page-numbers"></div>
 
