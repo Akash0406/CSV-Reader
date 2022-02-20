@@ -207,8 +207,12 @@ ul {
     display: none;
 }
 .finished .check {
+    position: absolute;
+    top: 10px;
+    left: 50px;
     display: block !important;
     font-size: 24px;
+    
     animation: scale 0.5s linear;
 }
 .finished .check i {
