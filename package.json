@@ -11,8 +11,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "author": "supriya",
-  "license": "ISC",
   "dependencies": {
     "csv-parser": "^3.0.0",
     "ejs": "^3.1.6",
@@ -21,5 +19,19 @@
     "mongoose": "^6.1.3",
     "multer": "^1.4.4",
     "path": "^0.12.7"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akash0406/CSV-Reader.git"
+  },
+  "keywords": [
+    "CSV"
+  ],
+  "author": "Akash Kumar Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akash0406/CSV-Reader/issues"
+  },
+  "homepage": "https://github.com/Akash0406/CSV-Reader#readme"
 }
