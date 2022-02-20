@@ -1,8 +1,10 @@
-# CSVUploader
+# CSV Reader
 
 # Description
 
 A simple CSV uploader web app which allows to uplaod and view csv files data in table format.
+
+A CSV Uploader and Reader Web Application Which Allow to Upload and View CSV Files Data in Table Formate.
 
 # Features
 
